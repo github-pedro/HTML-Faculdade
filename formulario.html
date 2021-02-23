@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Meu primeiro Formulário</title>
+    <script>
+        function funcao()
+        {
+           alert("Nome: " + nome.value + "\nSobrenome: " + sobrenome.value + "\nEmail: " + email.value + "\nCurso: " + curso.value );
+        }
+    </script>
+
+</head>
+<body>
+    <div> 
+        <h1 id="titulo"> Formulário </h1>
+        <p id="subtitulo"> Preencha as informações</p>
+        <br>
+        <label> </label>
+    </div>
+    
+    <form method="POST">
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" id="nome" name="nome" required><br>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" id="sobrenome" name="sobrenome" required><br>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email<strong></label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+
+            <div class="campo">
+                <label for="curso"><strong>Curso</strong></label>
+                <select id="curso" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Análise e Desenvolvimento de Sistemas</option>
+                  <option>Ciência da Computação</option>
+                  <option>Sistemas de informação</option>
+                  <option>Rede de computadores</option>
+                  <option>Outros...</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <button class="botao" type="submit" onclick="funcao()">Concluído</button>
+
+    </form>
+
+</body>
+</html>
