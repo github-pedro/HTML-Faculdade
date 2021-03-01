@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculadora.css" media="screen">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form class="painel" name="painel">
+        <input class="equacao" name="equacao">
+    </form>
+    <table class="table">
+        <tr>
+            <td>
+                <input class="botao" type="button" value="(" onclick="inserirvalor('(')">
+            </td>
+            <td>
+                <input class="botao" type="button" value=")" onclick="inserirvalor(')')">
+            </td>
+            <td>
+                <input class="botao" type="button" value="%" onclick="inserirvalor('%')">
+            </td>
+            <td>
+                <input class="botao" type="button" value="C" onclick="limpar()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="botao" type="button" value="7" onclick="inserirvalor(7)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="8" onclick="inserirvalor(8)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="9" onclick="inserirvalor(9)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="/" onclick="inserirvalor('/')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="botao" type="button" value="4" onclick="inserirvalor(4)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="5" onclick="inserirvalor(5)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="6" onclick="inserirvalor(6)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="x" onclick="inserirvalor('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="botao" type="button" value="1" onclick="inserirvalor(1)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="2" onclick="inserirvalor(2)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="3" onclick="inserirvalor(3)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="-" onclick="inserirvalor('-')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="botao" type="button" value="0" onclick="inserirvalor(0)">
+            </td>
+            <td>
+                <input class="botao" type="button" value="." onclick="inserirvalor('.')">
+            </td>
+            <td>
+                <input class="botao" type="button" value="=" onclick="resultado()">
+            </td>
+            <td>
+                <input class="botao" type="button" value="+" onclick="inserirvalor('+')">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
